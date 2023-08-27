@@ -1,0 +1,39 @@
+<div id="header">
+
+    <!-- Brand Logo -->
+    <nav class="position-absolute brand-logo-cont">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img src="../../../assets/images/logo-dark.png" alt="Brandwand">
+        </a>
+    </nav>
+    <nav class="navbar fixed-top navbar-light bg-transparent ">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <!-- <img src="../../../assets/images/logo-dark.png" alt="Brandwand"> -->
+            </a>
+            <div class="d-flex">
+                <form class="d-flex">
+
+                    <input class="form-control me-2 collapse " id="collapseSearch" type="search" placeholder="Search by keywords" aria-label="Search">
+                    
+                    <button class="btn btn-outline-none bg-color-primary rounded-0"  id="search-btn" data-bs-toggle="collapse" data-bs-target="#collapseSearch"
+                        type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <button type="button" class="btn rounded-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Menu</button>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <div class="position-relative menu-toggler">
+                        <div class="str-wrapper position-absolute">
+                            <div class="str str1"></div>
+                            <div class="str str2"></div>
+                            <div class="str str3"></div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+</div>

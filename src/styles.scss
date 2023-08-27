@@ -1,1 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+// @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+// @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+:root{
+    --color-primary: #f00;
+    --color-white: #fff;
+}
+body{
+    min-height: 100vh !important;
+}
+.color-primary{
+    color: var(--color-primary);
+}
+.bg-color-primary{
+    background-color: var(--color-primary);
+}
+
+.text-white{
+    color: #fff;
+}
+
+.cdk-overlay-container {
+    z-index: 99999999999999; 
+}
+html {
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+body {
+	position: relative;
+	background-color: #FFF;
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu Mono', Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 17px;
+	color: #333;
+}
+
+
+h1{
+	font-size: 2.5em !important;
+	text-transform: capitalize;
+}
+h2{
+	font-size: 2.25em !important;
+}
+h3{
+	font-size: 2em !important;
+}
+h4{
+	font-size: 1.75em !important;
+}
+h5{
+	font-size: 1.5em !important;
+}
+h6{
+	font-size: 1.25em !important;
+}
+a {
+	color: #3498DB;
+}
+a:hover, a:focus {
+	color: #2C82BB;
+	text-decoration: none;
+	outline: none;
+}
+
+::selection {
+	color: #000;
+	text-shadow: none;
+	background: #FFE800;
+}
+::-moz-selection {
+	color: #000;
+	text-shadow: none;
+	background: #FFE800; /* Firefox */
+}
+::-webkit-selection {
+	color: #000;
+	text-shadow: none;
+	background: #FFE800; /* Safari */
+}
+
+.list-inline {
+	margin-left: 0;
+}
+.list-inline > li {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.bg-dark{
+    background-color: #000;
+}   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.lg-padding{
+	padding: 80px 60px;
+}
+
+
+@media only screen and (max-width: 768px){
+	.lg-padding{
+		padding: 80px 20px !important;
+	}
+}

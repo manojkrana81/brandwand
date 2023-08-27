@@ -1,0 +1,10 @@
+.nav-link{
+    opacity: 0.7;
+}
+.nav-link:hover{
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+.link-active{
+    opacity: 1;
+}

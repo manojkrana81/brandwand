@@ -1,0 +1,19 @@
+<div class="container" style="padding: 80px 60px;">
+    <h1 >Browse Latest Blogs</h1>
+    <div class="row">
+        <div class="col-auto gy-4" *ngFor="let blog of blogs">
+            <div class="card shadow" style="width: 18rem;min-height: 20rem;">
+                <img src="../../assets/images/img-one.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{blog.title | slice:0:50}}</h5>
+                    <p class="card-text">
+                        {{blog.description | slice:0:20}} 
+                    </p>
+                    <p>
+                        <a class="btn btn-success d-block mx-auto" [routerLink]="['/blog/'+blog.id+ '/'+blog.url]">Read More...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

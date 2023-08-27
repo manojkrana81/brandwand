@@ -1,0 +1,25 @@
+<div class="container pt-5">
+
+    <div class="row mb-3">
+        <div class="col-auto">
+            <h2>Uploaded Media</h2>
+        </div>
+        <div class="col-6 col-sm-5 col-md-3 mb-3 ms-auto">
+            <input type="text" class="form-control" placeholder="Search Image...">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-auto" *ngFor="let image of images">
+                <div class="card" style="width: 18rem;" >
+                    <img [src]="image.fileName" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-info d-block mx-auto" (click)="getImageUrl(image)" >Copy Image URL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-12 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Admin Panel</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <!-- <li class="nav-item">
+                        <a href="#" [routerLink]="['/admin/dashboard']" routerLink class="nav-link text-white align-middle px-0">
+                            <i class="fa fa-dashboard"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-white px-0 align-middle d-block">
+                            <i class="fa fa-newspaper-o"></i> <span class="ms-1 d-none d-sm-inline">Blogs <i class="fa fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" [routerLink]="['/admin/blogs-list']" class="nav-link text-white px-0 ps-2"> <span class="d-none d-sm-inline"> <i class="fa fa-list"></i> All Blogs</span>  </a>
+                            </li>
+                            <li>
+                                <a href="#" [routerLink]="['/admin/create-blog']" class="nav-link text-white px-0 ps-2"> <span class="d-none d-sm-inline"> <i class="fa fa-plus"></i> Create New</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link text-white px-0 align-middle d-block">
+                            <i class="fa fa-newspaper-o"></i> <span class="ms-1 d-none d-sm-inline">Media <i class="fa fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu2">
+                            <li class="w-100">
+                                <a href="#" [routerLink]="['/admin/uploaded-media']" class="nav-link text-white px-0 ps-2"> <span class="d-none d-sm-inline"> <i class="fa fa-list"></i> All Media</span>  </a>
+                            </li>
+                            <li>
+                                <a href="#" [routerLink]="['/admin/upload-media']" class="nav-link text-white px-0 ps-2"> <span class="d-none d-sm-inline"> <i class="fa fa-plus"></i> Upload New</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <hr>
+                <div class="pb-5">
+                    <div class="mb-2">
+                        <i class="fa fa-user"></i>
+                        <span class="ms-2">Admin</span>
+                    </div>
+                    <button class="btn btn-danger" (click)="logout()">Logout <i class="fa fa-sign-out ps-2"></i></button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.floating-btn{
+    cursor: pointer;
+    width: 50px; 
+    height: 50px; 
+    // background-color: seagreen;
+    border-radius: 50%;
+}
+.floating-btn-container{
+    position: fixed;
+    top: 50%;
+    right:20px;   
+    z-index: 20;
+}
+.hiddenBtn{
+    width:0;
+    height:0;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+}
